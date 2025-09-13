@@ -24,7 +24,7 @@ app.get("/pong", (_req, res) => {
 });
 
 app.get("/version", (_req, res) => {
-  res.json({ name: "hello-cloud", version: "1.0.0" });
+  res.json({ name: "Juan Camilo / Carlos Muñoz / Harnol Cubides", version: "1.0.0" });
 });
 
 // Iniciar servidor
