@@ -19,6 +19,10 @@ app.get("/Gumfire", (_req, res) => {
   res.json({ status: "Buena suerte Gumfire", uptime: process.uptime() });
 });
 
+app.get("/ping", (_req, res) => {
+  res.json({ pong: true, at: new Date().toISOString() });
+});
+
 app.get("/version", (_req, res) => {
   res.json({ name: "hello-cloud", version: "1.0.0" });
 });
