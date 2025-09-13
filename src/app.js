@@ -19,7 +19,7 @@ app.get("/Gumfire", (_req, res) => {
   res.json({ status: "Buena suerte Gumfire", uptime: process.uptime() });
 });
 
-app.get("/ping", (_req, res) => {
+app.get("/pong", (_req, res) => {
   res.json({ pong: true, at: new Date().toISOString() });
 });
 
